@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+        "model": "modutils:block/bismuth_block"
+    }
+  }
+}
