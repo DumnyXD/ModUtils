@@ -4,7 +4,8 @@
 
   "block.modutils.bismuth_block": "Block of Bismuth",
   "block.modutils.bismuth_ore": "Bismuth Ore",
+  "block.modutils.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
 
   "creativetab.modutils.bismuth_items": "Bismuth Items",
-    "creativetab.modutils.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.modutils.bismuth_blocks": "Bismuth Blocks"
 }
