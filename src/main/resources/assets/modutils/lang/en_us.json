@@ -2,6 +2,8 @@
   "item.modutils.bismuth": "Bismuth",
   "item.modutils.raw_bismuth": "Raw Bismuth",
 
+  "item.modutils.chisel": "Chisel",
+
   "block.modutils.bismuth_block": "Block of Bismuth",
   "block.modutils.bismuth_ore": "Bismuth Ore",
   "block.modutils.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
