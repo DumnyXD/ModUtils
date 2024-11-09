@@ -21,8 +21,9 @@ public class ModCreativeModTabs {
                     .icon(() -> new ItemStack(ModItems.BISMUTH.get()))
                     .title(Component.translatable("creativetab.modutils.bismuth_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(new ItemStack(ModItems.BISMUTH.get()));
-                        output.accept(new ItemStack(ModItems.RAW_BISMUTH.get()));
+                        output.accept(ModItems.BISMUTH.get());
+                        output.accept(ModItems.RAW_BISMUTH.get());
+                        output.accept(ModItems.CHISEL.get());
                     })
                     .build());
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCKS_TAB = CREATIVE_MODE_TAB.register("bismuth_blocks_tab",
@@ -31,8 +32,9 @@ public class ModCreativeModTabs {
                     .icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK.get()))
                     .title(Component.translatable("creativetab.modutils.bismuth_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(new ItemStack(ModBlocks.BISMUTH_BLOCK.get()));
-                        output.accept(new ItemStack(ModBlocks.BISMUTH_ORE.get()));
+                        output.accept(ModBlocks.BISMUTH_BLOCK.get());
+                        output.accept(ModBlocks.BISMUTH_ORE.get());
+                        output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE.get());
                     })
                     .build());
 
