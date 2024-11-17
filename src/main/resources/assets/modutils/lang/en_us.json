@@ -8,6 +8,8 @@
   "block.modutils.bismuth_ore": "Bismuth Ore",
   "block.modutils.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
 
+  "block.modutils.magic_block": "Magic Block",
+
   "creativetab.modutils.bismuth_items": "Bismuth Items",
   "creativetab.modutils.bismuth_blocks": "Bismuth Blocks"
 }
