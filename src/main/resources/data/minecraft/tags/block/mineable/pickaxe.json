@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "modutils:bismuth_ore",
-    "modutils:bismuth_deepslate_ore",
-    "modutils:bismuth_block"
-  ]
-}

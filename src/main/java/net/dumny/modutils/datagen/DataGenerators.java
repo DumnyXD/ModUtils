@@ -1,5 +1,6 @@
 package net.dumny.modutils.datagen;
 
+import net.dumny.modutils.ModUtils;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -14,7 +15,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = "modutils", bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = ModUtils.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event){
