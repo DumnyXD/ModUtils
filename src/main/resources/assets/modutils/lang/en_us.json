@@ -9,7 +9,6 @@
   "item.modutils.frostfire_ice": "Frostfire Ice",
   "item.modutils.starlight_ashes": "Starlight Ashes",
 
-
   "block.modutils.bismuth_block": "Block of Bismuth",
   "block.modutils.bismuth_ore": "Bismuth Ore",
   "block.modutils.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
@@ -18,5 +17,10 @@
 
   "creativetab.modutils.bismuth_items": "Bismuth Items",
   "creativetab.modutils.bismuth_blocks": "Bismuth Blocks",
-  "creativetab.modutils.food": "Food"
+  "creativetab.modutils.food": "Food",
+
+  "tooltip.modutils.magic_block.tooltip" : "This block is very §dMAGICAL§r!",
+  "tooltip.modutils.chisel.shift_down": "This block can chisel Blocks",
+  "tooltip.modutils.chisel": "Press §eSHIFT§r for more information",
+  "tooltip.modutils.radish.tooltip": "Tastes really great!"
 }
