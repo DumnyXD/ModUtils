@@ -1,0 +1,13 @@
+// 1.21.1	2024-11-20T19:49:40.299355	Block States: modutils
+c8c0228fec28e8a6b35c9d133e47b43960f76db1 assets/modutils/blockstates/bismuth_block.json
+a9ea68d4d9926daa61515b436f507b9f93adfa7a assets/modutils/blockstates/bismuth_deepslate_ore.json
+97106e97b4779e1bad0f94217e50b5d1efc65d4b assets/modutils/blockstates/bismuth_ore.json
+05bb999c440dda64bb5a8b8e079aeea3028696f3 assets/modutils/blockstates/magic_block.json
+4926c8e9614b93b59023259840082f0c8040a34a assets/modutils/models/block/bismuth_block.json
+5b5a2fb635bc303df492118922b762783b20f8d4 assets/modutils/models/block/bismuth_deepslate_ore.json
+74c1c73073d41c67ead5efc0eb65d2b6a9040984 assets/modutils/models/block/bismuth_ore.json
+c4c9c5d915a8972224394ff82b6a589cc7d557f0 assets/modutils/models/block/magic_block.json
+a931b67e055fb9c5e3fee0a2494dea98a6d801e1 assets/modutils/models/item/bismuth_block.json
+34fbb6c2c132c4e2f6e1fc15e23620d70bc08fa2 assets/modutils/models/item/bismuth_deepslate_ore.json
+88ef20063c9c55309ea4971a4836dea5970d2a38 assets/modutils/models/item/bismuth_ore.json
+3f854819f0429222c6ea0ce924224b9f8118431e assets/modutils/models/item/magic_block.json

@@ -1,0 +1,5 @@
+// 1.21.1	2024-11-20T19:49:40.3025052	Loot Tables
+744a0a21cac2b45c5ebb84af835c5dd84959c108 data/modutils/loot_table/blocks/bismuth_block.json
+de00dcc2a550de2ff8f81d1984730e4e0d19bbbb data/modutils/loot_table/blocks/bismuth_deepslate_ore.json
+090b7178007ba5b5acdbca9cd8d11c829582fac1 data/modutils/loot_table/blocks/bismuth_ore.json
+f825797d370cc2178a134e221951e94eba0b3b9b data/modutils/loot_table/blocks/magic_block.json

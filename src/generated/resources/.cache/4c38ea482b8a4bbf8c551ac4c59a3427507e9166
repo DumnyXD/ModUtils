@@ -1,0 +1,4 @@
+// 1.21.1	2024-11-20T20:04:15.7838554	Tags for minecraft:block mod id modutils
+277ad21d5391b4123bf5dd17b0d0eb31942e2aec data/minecraft/tags/block/mineable/pickaxe.json
+9810c74a7ad96ec3cd57e3c1fb039193d73449e9 data/minecraft/tags/block/needs_diamond_tool.json
+2dba9c4246669667e0d6b2337b7f18ee0bd0af66 data/minecraft/tags/block/needs_iron_tool.json
