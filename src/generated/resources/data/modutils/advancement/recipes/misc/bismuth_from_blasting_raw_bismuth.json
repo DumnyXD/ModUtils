@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bismuth_deepslate_ore": {
+    "has_raw_bismuth": {
       "conditions": {
         "items": [
           {
-            "items": "modutils:bismuth_deepslate_ore"
+            "items": "modutils:raw_bismuth"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bismuth_from_blasting_bismuth_deepslate_ore"
+        "recipe": "modutils:bismuth_from_blasting_raw_bismuth"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bismuth_deepslate_ore"
+      "has_raw_bismuth"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bismuth_from_blasting_bismuth_deepslate_ore"
+      "modutils:bismuth_from_blasting_raw_bismuth"
     ]
   }
 }

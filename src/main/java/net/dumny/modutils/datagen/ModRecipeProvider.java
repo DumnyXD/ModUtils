@@ -1,12 +1,15 @@
 package net.dumny.modutils.datagen;
 
+import net.dumny.modutils.ModUtils;
 import net.dumny.modutils.block.ModBlocks;
 import net.dumny.modutils.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -42,5 +45,29 @@ public class ModRecipeProvider extends RecipeProvider {
 
         oreSmelting(recipeOutput, BISMUTH_SMELTABLES,RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.7f, 200, "bismuth");
         oreBlasting(recipeOutput, BISMUTH_SMELTABLES,RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.7f, 100, "bismuth");
+    }
+
+    protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> ingredients, RecipeCategory category,
+                                      ItemLike result, float experience, int cookingTime, String group) {
+        oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, ingredients, category, result,
+                experience, cookingTime, group, "_from_smelting");
+    }
+
+    protected static void oreBlasting(RecipeOutput recipeOutput, List<ItemLike> ingredients, RecipeCategory category,
+                                      ItemLike result, float experience, int cookingTime, String group) {
+        oreCooking(recipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, ingredients, category, result,
+                experience, cookingTime, group, "_from_blasting");
+    }
+
+    protected static <T extends AbstractCookingRecipe> void oreCooking(RecipeOutput recipeOutput, RecipeSerializer<T> serializer,
+                                                                       AbstractCookingRecipe.Factory<T> recipeFactory, List<ItemLike> ingredients,
+                                                                       RecipeCategory category, ItemLike result, float experience, int cookingTime,
+                                                                       String group, String suffix) {
+        for(ItemLike itemLike : ingredients) {
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemLike), category, result, experience, cookingTime, serializer, recipeFactory)
+                    .group(group)
+                    .unlockedBy(getHasName(itemLike), has(itemLike))
+                    .save(recipeOutput, ModUtils.MOD_ID +":"+getItemName(result) + suffix + "_" + getItemName(itemLike));
+        }
     }
 }
